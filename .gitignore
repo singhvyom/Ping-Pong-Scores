@@ -1,0 +1,6 @@
+#exlude credentials file
+credentials.json
+
+#exclude pycache
+__pycache__/
+*.pyc
