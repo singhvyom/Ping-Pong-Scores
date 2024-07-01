@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     stats = main.fetch_data()
-    return stats
+    return jsonify(stats)
 
 if __name__ == "__main__":
     app.run()
