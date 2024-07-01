@@ -4,9 +4,9 @@ import main
 app = Flask(__name__)
 
 @app.route("/")
-def fetch_data():
+def home():
     stats = main.fetch_data()
-    return jsonify(stats)
+    return stats
 
 if __name__ == "__main__":
     app.run()
