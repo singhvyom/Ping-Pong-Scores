@@ -1,0 +1,17 @@
+# Conda env for local dev. Creates env + ffmpeg (for Whisper/m4a) and pip-installs requirements.txt.
+#
+#   conda env create -f environment.yml
+#   conda activate pingpong
+#
+# Run from the repo root so `requirements.txt` resolves.
+
+name: pingpong
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10,<3.13
+  - pip
+  - ffmpeg
+  - pip:
+      - -r requirements.txt

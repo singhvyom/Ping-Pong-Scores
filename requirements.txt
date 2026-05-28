@@ -1,0 +1,13 @@
+# Core app (existing)
+flask
+flask-cors
+gspread
+pandas
+google-auth
+
+# Audio transcription (backend/scripts/transcribe_audio.py)
+openai-whisper>=20231117
+
+# Live mic VAD harness (backend/scripts/live_score_vad.py)
+sounddevice
+webrtcvad-wheels

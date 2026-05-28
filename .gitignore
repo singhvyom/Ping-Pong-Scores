@@ -1,3 +1,4 @@
+data/
 #exlude credentials file
 credentials.json
 
@@ -20,6 +21,7 @@ dist-ssr
 *.local
 
 # Editor directories and files
+.env
 .vscode/*
 !.vscode/extensions.json
 .idea
